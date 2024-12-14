@@ -1,0 +1,43 @@
+PROJECT TITLE: HEALTH HUB
+
+USER STORY/DESCRIPTION: Patients can communicate with doctors.
+
+BY: Alonge Korede
+
+ENTITIES IDENTIFICATION
+1. Who are the users of My App?
+
+	List the various categories of users here.
+	a) Doctors
+	b) Patients
+
+2. What Item(s) in my application do I intend to store something about?
+	a) Patients
+	b) Doctors
+
+RELATIONSHIP IDENTIFICATION
+
+3. What relationship can I identify among the entities?
+
+a) Patient to Appointment: A patient can have multiple appointments.
+	One-to-Many
+b) Doctor to Appointment: A doctor can have multiple appointments.
+	 One-to-Many
+c) Department to Doctor: A department can have multiple doctors.
+	 One-to-Many
+d) Patient to Medical Record: A patient can have multiple medical records.
+	 One-to-Many
+e) Patient to Billing: A patient can have multiple bills.
+	 One-to-Many
+f)User Account to Patient/Doctor: Staff can manage multiple patients/appointments.
+	 One-to-Many
+
+Summary of Tables Identified and the attributes:
+
+1. Patient: Patient ID, Name, Date of Birth, Contact Information, Address, Medical History
+2. Doctor: Doctor ID, Name, Specialty, Contact Information, Availability
+3. Appointment: Appointment ID, Date, Time, Patient ID, Doctor ID, Status
+4. Department: Department ID, Name, Location
+5. Medical Record: Record ID, Patient ID, Diagnosis, Treatment History, Medications
+6. Billing: Bill ID, Patient ID, Amount, Status, Payment Method
+7.User Account (for staff): User ID, Username, Password, Role (Admin, Nurse, etc.)
